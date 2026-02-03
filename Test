@@ -1,0 +1,16 @@
+# Task 1: Create a simple calculation using NumPy
+# Calculate the mean and standard deviation of sepal length
+
+sepal_lengths = df['sepal length (cm)']
+
+# Your code here:
+mean_sepal_length = np.mean(sepal_lengths)
+std_sepal_length = np.std(sepal_lengths)
+
+print(f"Mean sepal length: {mean_sepal_length:.2f} cm")
+print(f"Standard deviation: {std_sepal_length:.2f} cm")
+
+# Verification (don't modify)
+assert isinstance(mean_sepal_length, (float, np.floating)), "Mean should be a number"
+assert isinstance(std_sepal_length, (float, np.floating)), "Std should be a number"
+print("✅ Task 1 completed successfully!")
